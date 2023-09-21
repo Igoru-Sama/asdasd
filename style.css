@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    color: antiquewhite;
+    background-color: #131316;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+ul{
+    list-style-type: none;
+}
+.nav{
+    padding-left: 10px;
+    justify-content: space-between;
+    margin: 0px 0px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    list-style: none;
+    color: antiquewhite;
+    background-color: #1c1e29;
+    border-bottom: 5px solid #2f334e;
+}
+.nav li.navlinks{
+    display: inline;
+}
+.navitems{
+    font-weight: 500;
+    padding: 0px;
+    text-decoration: none;
+    align-items: center;
+    list-style: none;
+    color: antiquewhite;
+    background-color: #1c1e29;
+}
+li.navlinks *{
+    padding: 10px 50px;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: antiquewhite;
+    background-color: #1c1e29;
+}
+a.navlinks:hover{
+    background-color: #232847;
+}
+a.navlinks:active{
+    background-color: #374f52;
+}
+a.active{
+    background-color: #374f52;
+}
+#navbutton-responsive{
+    display: none;
+    padding: 0;
+}
+@media(max-width:700px){
+    #navbutton-responsive{
+        display: flex;
+        border-style: none;
+        text-decoration: none;
+        list-style: none;
+        color: antiquewhite;
+        background-color: #1c1e29;
+    }
+    .navitems{
+        display:none;
+    }
+}
+#navbutton-responsive img.navlinks{
+    margin: 10px 10px;
+    color: antiquewhite;
+    background-color: #1c1e29;
+}
+#navbutton-responsive img.navlinks:hover{
+    rotate: -90deg ;
+    transition: all 0.3s ease;
+}
+div.navbutton-container{
+    display: none;
+    text-align: center;
+    z-index: -1;
+}
+div.navbutton-container:hover ul.navbutton-container{
+    display: block;
+}
+.navbutton-container{
+    padding: 0px;
+    text-decoration: none;
+    margin-left: 75%;
+    margin-right: 0px;
+}
+li.navbutton-content{
+    background-color:#1c1e29;
+}
+li.navbutton-content *{
+    background-color:#1c1e29;
+}
